@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: IceChar
+Bundle-SymbolicName: com.icexxx.icechar;singleton:=true
+Bundle-Version: 1.0.0
+Require-Bundle: org.eclipse.ui
+Automatic-Module-Name: com.icexxx.icechar
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

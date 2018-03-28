@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="icechar"
+            id="com.icexxx.icechar.commands.category">
+      </category>
+      <command
+            name="icechar"
+            categoryId="com.icexxx.icechar.commands.category"
+            id="com.icexxx.icechar.commands.sampleCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="com.icexxx.icechar.commands.sampleCommand"
+            class="com.icexxx.icechar.handlers.IceCharHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="com.icexxx.icechar.commands.sampleCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="com.icexxx.icechar.toolbars.sampleToolbar">
+            <command
+                  commandId="com.icexxx.icechar.commands.sampleCommand"
+                  icon="icons/sample.png"
+                  tooltip="icechar"
+                  id="com.icexxx.icechar.toolbars.sampleCommand">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>
